@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    border-bottom: 1px solid #eeeeee;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.search {
+    display: flex;
+    width: 450px;
+    max-width: 100%;
+}
+
+.search input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #9B2A2A;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.user-menu {
+    display: flex;
+    gap: 25px;
+    white-space: nowrap;
+}
+
+.user-menu a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #777777;
+}
+
+/* Гар утасны тохиргоо */
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .search {
+        order: 3;
+        width: 100%;
+    }
+
+    .user-menu {
+        gap: 15px;
+        margin-left: auto;
+    }
+
+    .user-menu a {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+}
